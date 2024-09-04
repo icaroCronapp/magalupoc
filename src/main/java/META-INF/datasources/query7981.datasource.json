@@ -1,0 +1,251 @@
+{
+  "customId": "query7981",
+  "queryName": "Cota vinculado a quem esta logado",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Cota",
+  "entityFullName": "app.entity.Cota",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Cota",
+        "namespace": "app.entity.Cota",
+        "dataSourceOptions": {
+          "id": "app.Cota",
+          "customId": "Cota",
+          "customQueryName": "app.Cota",
+          "paramValues": [],
+          "entityFullName": "app.entity.Cota",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "nome",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "user",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "estaApta",
+              "type": "Boolean",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "filial",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "lance",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "grupo",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "user_name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "filial_nome",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "lance_dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "grupo_nome",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Cota",
+          "fullName": "app.entity.Cota",
+          "labelName": "app.entity.Cota (Cota)"
+        },
+        "alias": "c"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "c.user.id",
+          "field": "c.user.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":userId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "userId",
+      "fieldValue": {
+        "blocklyClass": "blockly.Usuario",
+        "blocklyMethod": "obterIdUsuarioLogado",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "Consulta a Entidades\u003capp.entity.Cota\u003e",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "library": false,
+          "namespace": "blockly.Usuario",
+          "sourcePath": "src/main/java/blockly/Usuario.blockly",
+          "language": "java",
+          "class": "blockly.Usuario",
+          "methods": [
+            {
+              "name": "obterIdUsuarioLogado",
+              "hasReturn": "true",
+              "params": [
+                "Consulta a Entidades\u003capp.entity.Cota\u003e"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "nome": null,
+    "user": null,
+    "estaApta": null,
+    "filial": null,
+    "lance": null,
+    "grupo": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "nome": null,
+    "user": null,
+    "estaApta": null,
+    "filial": null,
+    "lance": null,
+    "grupo": null
+  },
+  "security": {
+    "id": null,
+    "nome": null,
+    "user": null,
+    "estaApta": null,
+    "filial": null,
+    "lance": null,
+    "grupo": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query7981/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}

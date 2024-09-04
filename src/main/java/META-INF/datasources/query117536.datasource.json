@@ -1,0 +1,176 @@
+{
+  "customId": "query117536",
+  "queryName": "filtro relatorio",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "LanceComCota",
+  "entityFullName": "app.entity.LanceComCota",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "LanceComCota",
+        "namespace": "app.entity.LanceComCota",
+        "dataSourceOptions": {
+          "id": "app.LanceComCota",
+          "customId": "LanceComCota",
+          "customQueryName": "app.LanceComCota",
+          "paramValues": [],
+          "entityFullName": "app.entity.LanceComCota",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "cota",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "cota_nome",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "LanceComCota",
+          "fullName": "app.entity.LanceComCota",
+          "labelName": "app.entity.LanceComCota (LanceComCota)"
+        },
+        "alias": "l"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "l",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "l.id",
+          "field": "l.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":id",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "id",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "cota": null,
+    "cota_nome": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "cota": null,
+    "cota_nome": null
+  },
+  "security": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "cota": null,
+    "cota_nome": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query117536/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
